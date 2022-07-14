@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <h1>TODO-APP-REDUX</h1>
-      <TaskList />
       <AddTask />
+      <TaskList />
     </div>
   );
 }

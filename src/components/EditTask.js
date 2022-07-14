@@ -6,7 +6,10 @@ import { editTask } from "../redux/actions/action";
 const EditTask = ({ todo }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => {
+    setShow(true);
+    setEditText(todo.task);
+  };
   const dispatch = useDispatch();
   const [editText, setEditText] = useState("");
 
@@ -18,7 +21,7 @@ const EditTask = ({ todo }) => {
     <div>
       <button
         type="button"
-        class="btn btn-outline-danger btn-space"
+        className="btn btn-outline-danger btn-space"
         onClick={handleShow}
       >
         EDIT

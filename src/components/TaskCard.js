@@ -12,14 +12,14 @@ const TaskCard = ({ el }) => {
       <div className="d-flex justify-content-between">
         <button
           type="button"
-          class="btn btn-outline-danger btn-space"
+          className="btn btn-outline-danger btn-space"
           onClick={() => dispatch(deleteTask(el.id))}
         >
           delete
         </button>
         <button
           type="button"
-          class="btn btn-outline-primary btn-space"
+          className="btn btn-outline-primary btn-space"
           onClick={() => dispatch(completeTask(el.id))}
         >
           complete
